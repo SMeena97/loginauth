@@ -1,0 +1,21 @@
+<div class="row">
+    <div class="column"><br />
+        <h1>Returning Customer</h1><br />
+        <form>
+<div id="demo"></div>
+          <label for="email">Email*</label><br />
+            <input type="email" name="email" [(ngModel)]="input.email" /><br />
+            <label for="password">Password*</label><br />
+            <input type="password" name="password" [(ngModel)]="input.password" /><br />
+            <h3>Forgot your password?<a href="#">(click Here)</a></h3>
+            <button type="button" class="button" (click)="verification()">Login</button>
+        </form>
+
+    </div>
+    <div class="column"><br />
+        <h1>First time user?</h1>
+        <div><img src="assets/image/profile.png" alt="" width="60" height="60"></div>
+
+        <button type="button" class="button" [routerLink]="['/register']">Register</button>
+    </div>
+</div>

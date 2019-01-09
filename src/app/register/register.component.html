@@ -1,0 +1,31 @@
+<br/><h1>Create Account</h1><br/><br/><br/>
+<h2>Contact Info</h2><br/>
+<form >
+       
+        <label for="fullname">Full Name*</label> 
+        <input type="text" required name="fullnamename" [(ngModel)]="input.fullname" 
+        #firstname="ngModel"/><br />
+       
+    
+        <label for="phonenumber">Phone*</label> 
+        <input type="text" required name="phonenumber" [(ngModel)]="input.phonenumber" 
+         #lastname="ngModel"/><br /><br/>
+        <h2>Login Info</h2><br/>
+         <label for="email">Email*</label> 
+        <input required [email]="input.email!==''" type="text"  name="email" [(ngModel)]="input.email" 
+        #email="ngModel"/><br />
+        
+        <label for="password">Password*</label> 
+    <input type="password" required name="password" [(ngModel)]="input.password" 
+   #password="ngModel"/><br />
+
+   <label for="repeatpassword">Repeat Password*</label> 
+    <input type="repeatpassword" required name="repeatpassword" [(ngModel)]="input.repeatpassword" 
+   #repeatpassword="ngModel"/><br/><br/>
+    
+ <button type="button" class="button"(click)="register()">Register</button>
+</form>
+
+<p>
+    <a [routerLink]="['/login']">Login</a>
+</p>
