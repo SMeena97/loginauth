@@ -1,0 +1,46 @@
+form label{
+    
+        display: inline-block;
+       
+        width: 100px;
+    
+        font-weight: bold;
+    
+        }
+
+h2{
+    font-size:16px;
+}
+
+.button {
+    background-color: #ff795a;
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  h3{
+      font-size:12px;
+  }
+#demo{
+  color:red;
+}
